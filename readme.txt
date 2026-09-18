@@ -1,5 +1,5 @@
 === Asteria Financial Platform ===
-Contributors: asteria-contributors
+Contributors: ildrm
 Tags: finance, portfolio, analytics, paper trading, market data
 Requires at least: 6.5
 Requires PHP: 8.2

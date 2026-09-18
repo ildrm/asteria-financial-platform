@@ -1,11 +1,13 @@
 <?php
 /**
  * Plugin Name: Asteria Financial Platform
+ * Plugin URI: https://github.com/ildrm/asteria-financial-platform
  * Description: Self-contained financial intelligence workspace with synthetic markets, analytics, portfolios, risk, and paper trading.
  * Version:     0.2.0
  * Requires at least: 6.5
  * Requires PHP: 8.2
- * Author:      Asteria Contributors
+ * Author:      Shahin Ilderemi
+ * Author URI:  https://ildrm.com
  * License:     GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: asteria-financial-platform
