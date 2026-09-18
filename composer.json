@@ -1,0 +1,23 @@
+{
+  "name": "asteria/financial-platform",
+  "description": "Self-contained Asteria financial intelligence plugin for WordPress",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "Asteria\\FinancialPlatform\\": "app/"
+    }
+  },
+  "scripts": {
+    "test": "@php tests/run.php",
+    "lint": "@php tools/lint.php"
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

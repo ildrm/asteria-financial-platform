@@ -1,0 +1,13 @@
+/.git
+/.gitignore
+/.distignore
+/docs
+/tests
+/tools
+/vendor
+/composer.json
+/composer.lock
+/.env
+/.env.*
+*.log
+*.zip

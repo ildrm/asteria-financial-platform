@@ -1,0 +1,9 @@
+/vendor/
+/.phpunit.cache/
+/.idea/
+/.vscode/
+*.log
+.env
+.env.*
+!.env.example
+*.zip

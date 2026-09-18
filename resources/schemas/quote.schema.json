@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://asteria.invalid/schemas/quote.schema.json",
+  "title": "Asteria Quote",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["symbol", "currency", "bid", "ask", "midpoint", "last", "observed_at", "provider", "source", "quality", "synthetic", "licensing"],
+  "properties": {
+    "symbol": {"type": "string", "pattern": "^[A-Z0-9._/-]{1,32}$"},
+    "currency": {"type": "string", "pattern": "^[A-Z]{3}$"},
+    "bid": {"type": "number", "minimum": 0},
+    "ask": {"type": "number", "minimum": 0},
+    "midpoint": {"type": "number", "minimum": 0},
+    "last": {"type": "number", "minimum": 0},
+    "previous_close": {"type": "number", "minimum": 0},
+    "change": {"type": "number"},
+    "change_percent": {"type": "number"},
+    "open": {"type": "number", "minimum": 0},
+    "high": {"type": "number", "minimum": 0},
+    "low": {"type": "number", "minimum": 0},
+    "volume": {"type": "integer", "minimum": 0},
+    "market_status": {"type": "string"},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "ingested_at": {"type": "string", "format": "date-time"},
+    "provider": {"type": "string"},
+    "source": {"type": "string"},
+    "quality": {"enum": ["GOOD", "STALE", "INDICATIVE", "CONFLICTED"]},
+    "synthetic": {"type": "boolean"},
+    "licensing": {"type": "string"}
+  }
+}
